@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Header from "@/components/nav";
 import Projects from "@/components/projects";
+import Certifications from "@/components/certifications";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Header />
 
       {/* About Section */}
-      <section id="about" className="py-12 bg-green-50 shadow-md rounded-lg">
+      <section id="about" className="py-12 bg-green-50 shadow-md">
         <div className="container mx-auto px-6 text-center">
           <div className="mb-6">
             <Image
@@ -41,71 +42,8 @@ export default function Home() {
       <Projects />
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-semibold text-center mb-6">
-            Certifications
-          </h2>
-          <ul className="list-disc pl-8 text-gray-700">
-            <li>
-              <strong>AWS Academy Graduate:</strong> AWS Academy Cloud
-              Foundations (
-              <a
-                href="https://www.credly.com/badges/2d547782-4f90-445a-99da-ea4c68e9a7ad"
-                className="text-green-500 hover:underline hover:font-bold"
-              >
-                View Certificate
-              </a>
-              )
-            </li>
-            <li>
-              <strong>HackerRank Certificates:</strong>
-              <ul className="list-disc pl-8">
-                <li>
-                  <a
-                    className="text-green-500 hover:underline hover:font-bold"
-                    href="https://www.hackerrank.com/certificates/iframe/5096ec204310"
-                  >
-                    React (Basic)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-green-500 hover:underline hover:font-bold"
-                    href="https://www.hackerrank.com/certificates/iframe/4701ebf850f6"
-                  >
-                    JavaScript (Basic)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-green-500 hover:underline hover:font-bold"
-                    href="https://www.hackerrank.com/certificates/iframe/6661e77fe18c"
-                  >
-                    SQL (Basic)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-green-500 hover:underline hover:font-bold"
-                    href="https://www.hackerrank.com/certificates/iframe/82670b942cb1"
-                  >
-                    CSS (Basic)
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-green-500 hover:underline hover:font-bold"
-                    href="https://www.hackerrank.com/certificates/iframe/2b7caf1a4f3c"
-                  >
-                    Problem Solving (Basic)
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <Certifications />
+
       {/* Contact Section */}
       <section id="contact" className="py-12 bg-gray-100">
         <div className="container mx-auto px-4 text-center">
